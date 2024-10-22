@@ -342,7 +342,7 @@ class Tomarket:
                         game_play = await response.json()
                         if game_play['status'] == 0:
                             await asyncio.sleep(random.randint(33, 35))
-                            await self.game_claim(token=token, points=random.randint(400, 6001))
+                            await self.game_claim(token=token, points=random.randint(400, 550))
                         elif game_play['status'] == 500 and game_play['message'] == 'no chance':
                             return self.print_timestamp(f"{Fore.RED + Style.BRIGHT}[ No Chance To Start Game ]{Style.RESET_ALL}")
             except ClientResponseError as e:
