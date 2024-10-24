@@ -655,7 +655,7 @@ class Tomarket:
             return self.print_timestamp(f"{Fore.RED + Style.BRIGHT}[ An Unexpected Error Occurred While Fetching Spin Assets: {str(e)} ]{Style.RESET_ALL}")
 
     async def spin_raffle(self, token: str, category: str):
-        url = 'https://api-web.tomarket.ai/tomarket-game/v1/spin/raffle'
+        url = ''
         data = json.dumps({'category':category})
         headers = {
             'Authorization': token,
